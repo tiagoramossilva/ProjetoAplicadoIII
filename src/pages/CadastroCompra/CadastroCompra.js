@@ -166,7 +166,7 @@ function CadastroCompra() {
       <form className="purchase-form" onSubmit={handleSubmit}>
         {/* Informações do fornecedor */}
         <fieldset className="form-section">
-          <legend>Informações do fornecedor</legend>
+          <legend style={{display: "flex"}}>Informações do fornecedor <p style={{color: "red"}}>*</p></legend>
           <div className="form-group">
             <label>Razão social:</label>
             <input
@@ -231,7 +231,7 @@ function CadastroCompra() {
 
         {/* Informações do cliente */}
         <fieldset className="form-section">
-          <legend>Informações do cliente</legend>
+          <legend style={{display: "flex"}}>Informações do cliente<p style={{color: "red"}}>*</p></legend>
           <div className="form-group">
             <label>Razão social:</label>
             <input
@@ -296,7 +296,7 @@ function CadastroCompra() {
 
         {/* Informações da compra */}
         <fieldset className="form-section">
-          <legend>Informações da compra</legend>
+          <legend style={{display: "flex"}}>Informações da compra<p style={{color: "red"}}>*</p></legend>
           <div className="form-group">
             <label>Data da compra:</label>
             <input
@@ -420,7 +420,7 @@ function CadastroCompra() {
               name="projeto.nome_projeto"
               onChange={handleFormChange}
             />
-            <label>Responsavel técnico:</label>
+            <label>Responsável técnico:</label>
             <input
               type="text"
               name="projeto.responsavel_tecnico"
@@ -447,13 +447,13 @@ function CadastroCompra() {
         <fieldset className="form-section">
           <legend>Informações adicionais</legend>
           <div className="form-group">
-            <label>Usuario:</label>
+            <label>Usuário:</label>
             <input
               type="text"
               name="adicionais.usuario"
               onChange={handleFormChange}
             />
-            <label>Observacoes:</label>
+            <label>Observações:</label>
             <input
               type="text"
               name="adicionais.observacoes"
